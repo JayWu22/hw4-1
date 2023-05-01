@@ -1,0 +1,16 @@
+/*!
+ * You can write copyrights rules here. These rules will be copied into the outputs.
+ */
+
+//@outputDir("erpc_outputs") // output directory
+
+program hwLCD; // specify name of output files
+
+interface LCDService // cover functions for same topic
+{
+    lcd_locate(in uint8 lcd) -> void
+    lcd_cls(void) -> void
+    lcd_rows(void) -> void
+    lcd_columns(void) -> void
+    lcd_putc(in uint8 lcd) -> void
+}
